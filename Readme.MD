@@ -1,7 +1,7 @@
 # 🚗 Sensor Fusion and Deep Learning for Advanced Driver Assistance System (ADAS) Perception
 
-![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-2.17.0-orange?logo=tensorflow)
+![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.18.0-orange?logo=tensorflow)
 ![Scikit-Learn](https://img.shields.io/badge/scikit--learn-1.6.1-yellow?logo=scikit-learn)
 ![Redis](https://img.shields.io/badge/Redis-6.4.0-red?logo=redis)
 ![License](https://img.shields.io/badge/license-MIT-green)
@@ -90,7 +90,7 @@ Accuracy / Precision / Recall / F1 / Confusion Matrix / ROC Curve
 |---|---|
 | **Language** | Python 3.10+ |
 | **GUI** | Tkinter |
-| **Deep Learning** | TensorFlow 2.17 / Keras |
+| **Deep Learning** | TensorFlow 2.18 / Keras |
 | **Machine Learning** | Scikit-Learn 1.6 |
 | **Data Balancing** | imbalanced-learn (SMOTE) |
 | **Data Processing** | NumPy, Pandas |
@@ -173,7 +173,7 @@ ADAS-Project/
 
 Before you begin, ensure the following are installed on your system:
 
-- Python **3.10** or **3.11** (TensorFlow 2.17 does not support Python 3.12+)
+- Python **3.12** (Microsoft Store or official installer)
 - `pip` package manager
 - Redis server (for authentication)
 - Git
@@ -185,11 +185,12 @@ Before you begin, ensure the following are installed on your system:
 ### Step 1 – Install Python
 
 1. Go to [https://www.python.org/downloads/](https://www.python.org/downloads/)
-2. Download **Python 3.10.x** or **3.11.x** (recommended)
+2. Download **Python 3.12.x** (or install via Microsoft Store — search "Python 3.12")
 3. During installation, **check ✅ "Add Python to PATH"**
 4. Verify installation:
    ```bash
    python --version
+   # Expected: Python 3.12.x
    ```
 
 ---
@@ -281,7 +282,7 @@ matplotlib==3.10.3
 seaborn==0.13.2
 scikit-learn==1.6.1
 imbalanced-learn==0.14.0
-tensorflow==2.17.0
+tensorflow==2.18.0
 joblib==1.4.2
 Pillow==11.3.0
 redis==6.4.0
@@ -410,7 +411,7 @@ Metrics displayed in the GUI output panel include:
 | `ValueError: Missing encoder for column` | Predicting before training | Complete Admin Workflow Steps 1–5 first |
 | `OSError: No such file or directory: 'models/scaler.joblib'` | Scaler not saved yet | Train the DualStream-ConvRF model first (Admin → Step 5) |
 | GUI opens but buttons don't respond | Admin not logged in | Log in as Admin to see training buttons |
-| TensorFlow not installing on Python 3.12 | Version incompatibility | Downgrade to Python 3.10 or 3.11 |
+| TensorFlow not installing | Version incompatibility | Ensure you are using Python 3.12 and `tensorflow==2.18.0` |
 
 ---
 
